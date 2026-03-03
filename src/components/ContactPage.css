@@ -1,0 +1,90 @@
+.page-contenta {
+  flex: 1;
+  padding: 0 60px 40px 60px;
+}
+
+.top-bara {
+  width: 100%;
+  background: linear-gradient(90deg,#1d4ed8,#2563eb);
+  color: white;
+  padding: 30px 70px;
+  margin-bottom: 40px;
+}
+
+.xx{
+  width: 108%;
+  margin-left: -45px;
+  
+}
+
+.contact-container {
+  width: 100%;
+}
+
+.contact-title {
+  border: 1px solid #5a6bff;
+  border-radius: 20px;
+  padding: 18px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 25px;
+  border-radius: 16px;
+  border: 1px solid  #4f6cff;
+  outline: none;
+  font-size: 14px;
+}
+
+.contact-textarea {
+  width: 100%;
+  height: 120px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid  #4f6cff;
+  resize: none;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 20px;
+}
+
+.replyy-btn {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #3d4bf0, #5563ff);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+ 
+}
+.replyy-btn:hover{
+  color: aliceblue;
+   background: linear-gradient(90deg, #2a3176, #5563ff);
+}
+
+.backk-btn {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #3d4bf0, #5563ff);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  cursor: pointer;
+}
+.backk-btn:hover{
+  color: aliceblue;
+  background: linear-gradient(90deg, #2a3176, #5563ff);
+}
+

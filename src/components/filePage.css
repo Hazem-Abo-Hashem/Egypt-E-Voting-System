@@ -1,0 +1,33 @@
+.file-page{
+  flex:1;
+}
+
+.blue-header{
+  background: linear-gradient(90deg,#1d4ed8,#2563eb);
+  color:white;
+  padding:30px 70px;
+}
+
+.file-content{
+  padding:40px 70px;
+}
+
+.file-title{
+  margin-bottom:20px;
+}
+
+.image-box{
+  height:300px;
+  background:#9e9494;
+  border-radius:20px;
+  margin-bottom:25px;
+}
+
+.back{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:14px;
+  background:linear-gradient(90deg,#3d4bf0,#5563ff);
+  color:white;
+}

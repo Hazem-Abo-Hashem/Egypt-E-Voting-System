@@ -1,0 +1,44 @@
+.page-content {
+  flex: 1;
+  padding: 0 40px 40px 40px;
+}
+/* الشريط الأزرق */
+.top-bar {
+  margin-left: -30px;
+  background: linear-gradient(90deg,#1d4ed8,#2563eb);
+  color: white;
+  padding: 30px 70px;
+  margin-left: -25px;
+  margin-top: 0px;
+  width: 103%;
+}
+
+
+/* عنوان القسم */
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* كروت المشكلة */
+.problem-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #5a6bff;
+  border-radius: 18px;
+  padding: 18px 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.problem-card:hover {
+  background: #f2f4ff;
+}
+
+.problem-card span {
+  font-size: 22px;
+}

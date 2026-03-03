@@ -1,0 +1,71 @@
+.accepted-page {
+  width: 100%;
+  
+}
+
+.blue-headera {
+  background: linear-gradient(to right, #2c55d4, #3a66e5);
+  color: white;
+  padding: 25px;
+ 
+}
+.xc{
+     width: 96.6%;
+}
+.accepted-wrapper {
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  border: 2px solid #3a66e5;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.carda {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  height: 150px;
+  background: #c4c4c4;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  color: #2c55d4;
+  font-size: 14px;
+}
+
+.delete-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #2c55d4, #3a66e5);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  opacity: 0.9;
+}

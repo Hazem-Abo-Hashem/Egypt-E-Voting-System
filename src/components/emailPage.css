@@ -1,0 +1,33 @@
+.email-body{
+  padding:40px 70px;
+  
+}
+.email-body h3{
+  margin-left: -90px;
+}
+.mm{
+  margin-top: -40px;
+  width: 106.5%;
+  margin-left: -45px;
+  
+}
+.aa{
+  width: 117.5%;
+  margin-left: -90px;
+  
+}
+.email-card{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  margin-bottom:30px;
+  border:1px solid #4f6cff;
+  border-radius:15px;
+  background:white;
+  cursor:pointer;
+}
+
+.email-card:hover{
+  background:#eef2ff;
+}

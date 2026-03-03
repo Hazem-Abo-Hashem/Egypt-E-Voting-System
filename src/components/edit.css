@@ -1,0 +1,104 @@
+
+
+.org-wrapper {
+  padding: 36px 64px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.title-pill {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  padding: 14px 0;
+  border: 2px solid #4b5cff;
+  border-radius: 40px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.org-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 36px;
+}
+
+.tab {
+  padding: 12px 26px;
+  border-radius: 14px;
+  border: none;
+  background: #d9d9d9;
+  color: #fff;
+  font-weight: 500;
+}
+
+.tab.active {
+  background: #3f49ff;
+}
+
+.org-card {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 42px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.org-card label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.org-card input {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1.5px solid #bfc6ff;
+  background: #fff;
+  margin-bottom: 26px;
+  font-size: 14px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+
+.actions {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 28px;
+  margin-top: 6px;
+}
+
+.save-btn {
+  width: 100%;
+  padding: 18px 0;
+  border-radius: 18px;
+  border: none;
+  background: #3f49ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.edit-btn {
+  width: 100%;
+  padding: 18px 0;
+  border-radius: 18px;
+  border: none;
+  background: #cfcfcf;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
