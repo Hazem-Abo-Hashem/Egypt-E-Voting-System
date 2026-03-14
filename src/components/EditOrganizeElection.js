@@ -26,7 +26,7 @@ function EditOrganizeElection() {
 
       {/* 🔵 FORM */}
       <div className="form">
-        <label>Election Number</label>
+        <label>Election Name</label>
         <input
           name="electionNumber"
           value={formData.electionNumber}

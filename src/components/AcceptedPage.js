@@ -3,6 +3,7 @@ import "./AcceptedPage.css";
 function AcceptedPage({ accepted, deleteAccepted }) {
 
   return (
+    
     <div className="accepted-page">
       <div className="blue-header xc">
         <h2>Welcome , Admin !</h2>
@@ -18,7 +19,7 @@ function AcceptedPage({ accepted, deleteAccepted }) {
             <p>No Accepted Candidates</p>
           ) : (
             accepted.map((candidate) => (
-              <div className="carda" key={candidate.id}>
+              <div className="carda uu" key={candidate.id}>
                 <div className="card-img"></div>
 
                 <h3>{candidate.name}</h3>
@@ -27,7 +28,7 @@ function AcceptedPage({ accepted, deleteAccepted }) {
                 <button
                   className="delete-btn"
                   onClick={() => {
-                  const confirmDelete = window.confirm("هل تريد مسح هذا المرشح؟");
+                  const confirmDelete = window.confirm("Are you sure you want to delete this Candidate?");
 
                   if (confirmDelete) {
                   deleteAccepted(candidate.id);

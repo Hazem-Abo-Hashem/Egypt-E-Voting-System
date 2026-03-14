@@ -1,6 +1,8 @@
 
 .admin-page{
   flex:1;
+  margin-left: 240px;
+  
 }
 .blue-header{
   background:linear-gradient(90deg,#1d4ed8,#2563eb);

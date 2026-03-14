@@ -1,8 +1,11 @@
 .page-content {
   flex: 1;
   padding: 0 40px 40px 40px;
+  margin-left: 240px;
+  
+
 }
-/* الشريط الأزرق */
+
 .top-bar {
   margin-left: -30px;
   background: linear-gradient(90deg,#1d4ed8,#2563eb);

@@ -43,13 +43,15 @@ export default function CandidateDetails({acceptCandidate,refuseCandidate}) {
               Accept
             </button>
             <button
-  className="refuse"
-  onClick={() => {
-  window.confirm("هل تريد مسح هذا المرشح؟");
-    
-    refuseCandidate(candidateData);
-    navigate("/email");
-  }}
+             className="refuse"
+             onClick={() => {
+             const confirmDelete = window.confirm("Are you sure you want to delete this Candidate?");
+
+             if (confirmDelete) {
+             refuseCandidate(candidateData);
+             navigate("/email");
+            }   
+            }}
 >
   Refused
 </button>

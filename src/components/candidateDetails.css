@@ -2,6 +2,7 @@
   flex:1;
  
   overflow: auto;
+  margin-left: 240px;
 }
 
 .blue-header{
@@ -62,6 +63,7 @@
     background: linear-gradient(to right, #2c55d4, #3a66e5);
   transition: 0.4s;
   color:white;
+  transition: 0.5s;
 }
 
 .refuse{
@@ -70,7 +72,7 @@
   border:none;
   border-radius:14px;
    background: linear-gradient(to right, #2c55d4, #3a66e5);
-   transition: 0.4s;
+   transition: 0.5s;
 }
 .refuse:hover{
   background: #d9363e;

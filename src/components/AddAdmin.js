@@ -46,7 +46,7 @@ function AddAdmin({ addAdmin }) {
         >
           Add user
         </button>
-
+         <button className="show-all" onClick={()=> navigate("/admin-list")}>Show All </button>  
       </div>
     </div>
   );

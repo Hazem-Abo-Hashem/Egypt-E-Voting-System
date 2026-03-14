@@ -34,11 +34,16 @@ function AdminList({ admins,deleteAdmin }) {
 
     <div>
       <button
-        onClick={() => deleteAdmin(admin.id)}
-        className="delete-btn"
-      >
-        Delete
-      </button>
+  onClick={() => {
+    const confirmDelete = window.confirm("Are you sure you want to delete this admin?");
+    if (confirmDelete) {
+      deleteAdmin(admin.id);
+    }
+  }}
+  className="delete-btn"
+>
+  Delete
+</button>
     </div>
   </div>
 ))}

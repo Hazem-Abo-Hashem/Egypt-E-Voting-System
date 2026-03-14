@@ -175,4 +175,9 @@ body {
   text-decoration: underline;
   font-weight: 600;
 }
-
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: o;
+  width: 240px;
+}

@@ -11,7 +11,7 @@ function PeopleAssembly() {
       <div className="title">People Assembly</div>
 
       <div className="form">
-        <label>Election Number</label>
+        <label>Election Name</label>
         <input value={data?.electionNumber || ""} readOnly />
 
         <div className="row">

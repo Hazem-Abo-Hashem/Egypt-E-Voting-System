@@ -16,26 +16,26 @@ function OrganizeElection() {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  const handleSave = () => {
-  if (
-    !formData.electionNumber ||
-    !formData.governorate ||
-    !formData.elogo ||
-    !formData.fromDay ||
-    !formData.toDay
-  ) {
-    alert("Fill all fields");
-    return;
-  }
 
-  navigate("/people-assembly", { state: formData });
-};
+  const handleSave = () => {
+    if (
+      !formData.electionNumber ||
+      !formData.governorate ||
+      !formData.elogo ||
+      !formData.fromDay ||
+      !formData.toDay
+    ) {
+      alert("Fill all fields");
+      return;
+    }
+
+    navigate("/people-assembly", { state: formData });
+  };
 
   return (
     <div className="content">
       <div className="title">Organize Elections</div>
 
-     
       <div className="tabs">
         <button className="tab active">People Assembly</button>
         <button className="tab">Senate</button>
@@ -43,13 +43,13 @@ function OrganizeElection() {
         <button className="tab">Local</button>
       </div>
 
-      
       <div className="form">
-        <label>Election Number</label>
+        <label>Election Name</label>
         <input
           name="electionNumber"
           value={formData.electionNumber}
-          onChange={handleChange} placeholder="Enter Eletion Number" required
+          onChange={handleChange}
+          placeholder="Enter Eletion Number"
         />
 
         <div className="row">
@@ -58,7 +58,8 @@ function OrganizeElection() {
             <input
               name="governorate"
               value={formData.governorate}
-              onChange={handleChange} placeholder="Enter Your City"required
+              onChange={handleChange}
+              placeholder="Enter Your City"
             />
           </div>
 
@@ -67,7 +68,8 @@ function OrganizeElection() {
             <input
               name="elogo"
               value={formData.elogo}
-              onChange={handleChange} placeholder="Enter Your Logo" required
+              onChange={handleChange}
+              placeholder="Enter Your Logo"
             />
           </div>
         </div>
@@ -76,34 +78,40 @@ function OrganizeElection() {
           <div>
             <label>From Day</label>
             <input
-              type="date"
               name="fromDay"
+              type="date"
               value={formData.fromDay}
-              onChange={handleChange} placeholder="Enter " required 
+              onChange={handleChange}
             />
           </div>
 
           <div>
             <label>To Day</label>
             <input
-              type="date"
               name="toDay"
+              type="date"
               value={formData.toDay}
-              onChange={handleChange} required
+              min={formData.fromDay}
+              max={
+                formData.fromDay
+                  ? new Date(
+                      new Date(formData.fromDay).setDate(
+                        new Date(formData.fromDay).getDate() + 7
+                      )
+                    )
+                      .toISOString()
+                      .split("T")[0]
+                  : ""
+              }
+              onChange={handleChange}
             />
           </div>
         </div>
 
         <div className="actions">
-          <button
-            className="save"
-            onClick={handleSave}
-
-          >
+          <button className="save" onClick={handleSave}>
             Save
           </button>
-
-          
         </div>
       </div>
     </div>
