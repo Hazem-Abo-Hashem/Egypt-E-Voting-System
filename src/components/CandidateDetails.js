@@ -16,7 +16,7 @@ export default function CandidateDetails({acceptCandidate,refuseCandidate}) {
         <h2>Welcome , Admin !</h2>
         <p>Here's what's happening with your projects today</p>
       </div>
-
+       {/* معاذ */}
       <div className="candidate-wrapper">
 
         <div className="candidate-title">
