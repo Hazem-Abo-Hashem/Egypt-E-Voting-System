@@ -4,7 +4,10 @@ import { NavLink } from "react-router-dom";
 export default function Sidebar() {
   return (
     <div className="sidebar bn">
-      <div className="logo">Egypt E_voting <br/>system </div>
+      <div className="logo">
+        Egypt E_voting <br />
+        system{" "}
+      </div>
 
       <h3>
         <NavLink
@@ -19,58 +22,85 @@ export default function Sidebar() {
 
       <ul>
         <li>
-         <NavLink
-  to="/add-admin"
-  className={({ isActive }) =>
-    window.location.pathname.includes("admin")
-      ? "sidebar-link active-link"
-      : "sidebar-link"
-  }
->
-  Add Admin
-</NavLink>
+          <NavLink
+            to="/add-admin"
+            className={({ isActive }) =>
+              window.location.pathname.includes("admin")
+                ? "sidebar-link active-link"
+                : "sidebar-link"
+            }
+          >
+            Add Admin
+          </NavLink>
         </li>
 
-       <li>
-  <NavLink
-  to="/email"
-  className={({ isActive }) =>
-    isActive ||
-    window.location.pathname.startsWith("/file") ||
-    window.location.pathname.startsWith("/candidate")
-      ? "sidebar-link active-link"
-      : "sidebar-link"
-  }
->
-  Email
-</NavLink>
-</li>
-<li>
-  <NavLink
-    to="/problem"
-    className={({ isActive }) =>
-      isActive ||
-      window.location.pathname.startsWith("/problem")
-        ? "sidebar-link active-link"
-        : "sidebar-link"
-    }
-  >
-    Problem
-  </NavLink>
-</li>
-        <li><NavLink
-  to="/accepted"
-  className={({ isActive }) =>
-    isActive ? "sidebar-link active-link" : "sidebar-link"
-  
-  }
->
-  Accepted
-</NavLink></li>
-        <li>Electoral District</li>
+        <li>
+          <NavLink
+            to="/email"
+            className={({ isActive }) =>
+              isActive ||
+              window.location.pathname.startsWith("/file") ||
+              window.location.pathname.startsWith("/candidate")
+                ? "sidebar-link active-link"
+                : "sidebar-link"
+            }
+          >
+            Email
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/problem"
+            className={({ isActive }) =>
+              isActive || window.location.pathname.startsWith("/problem")
+                ? "sidebar-link active-link"
+                : "sidebar-link"
+            }
+          >
+            Problem
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/accepted"
+            className={({ isActive }) =>
+              isActive ? "sidebar-link active-link" : "sidebar-link"
+            }
+          >
+            Accepted
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/ElectoralDistrictPage"
+            className={({ isActive }) =>
+              isActive ? "sidebar-link active-link" : "sidebar-link"
+            }
+          >
+            Electoral District
+          </NavLink>
+        </li>
         <li>Political Party</li>
-        <li>Vote</li>
-          <li>Voter</li>
+        <li>
+          <NavLink
+            to="/VotePage"
+            className={({ isActive }) =>
+              isActive ? "sidebar-link active-link" : "sidebar-link"
+            }
+          >
+           Vote
+          </NavLink>
+          </li>
+        <li>
+          <NavLink
+            to="/VoterPage"
+            className={({ isActive }) =>
+              isActive ? "sidebar-link active-link" : "sidebar-link"
+            }
+          >
+           Voter
+          </NavLink>
+          </li>
         <li>Result</li>
       </ul>
     </div>

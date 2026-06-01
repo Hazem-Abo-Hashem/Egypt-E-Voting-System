@@ -1,0 +1,91 @@
+.vote-page {
+  padding: 40px 60px;
+  width: 100%;
+}
+
+/* title */
+
+.vote-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* search */
+
+.search-box {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 25px auto;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #4a63ff;
+  outline: none;
+}
+
+/* table */
+
+.table-card {
+  max-width: 1000px;
+  margin: auto;
+  background: #f5f6f8;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+}
+
+/* grid واحد مشترك */
+
+.table-grid1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+/* header */
+
+.table-header {
+  background: black;
+  color: white;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+/* rows */
+
+.table-row {
+  background: #dfe4ea;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* مهم جداً */
+
+.table-grid span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.table-header span {
+  font-weight: 500;
+}
+
+.table-row span {
+  display: flex;
+  align-items: center;
+}
+
+/* link style */
+
+.link {
+  color: #3b44e0;
+  cursor: pointer;
+}
