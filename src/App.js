@@ -14,6 +14,7 @@ import ProblemPage from "./components/ProblemPage";
 import ContactPage from "./components/ContactPage";
 import ReplyPage from "./components/ReplyPage";
 import AcceptedPage from "./components/AcceptedPage";
+import ElectionsPage from "./components/ElectionsPage";
 import "./App.css";
 
 function MainLayout({ children }) {
@@ -192,6 +193,15 @@ const deleteAccepted = (id) => {
   element={
     <MainLayout>
       <AcceptedPage accepted={accepted}   deleteAccepted={deleteAccepted}/>
+    </MainLayout>
+  }
+  
+/>
+<Route
+  path="/elections"
+  element={
+    <MainLayout>
+      <ElectionsPage />
     </MainLayout>
   }
 />

@@ -20,10 +20,11 @@
 
 .image-box{
   height:300px;
-  background:#9e9494;
+  background:transparent;
   border-radius:20px;
   margin-bottom:25px;
 }
+
 
 .back{
   width:100%;

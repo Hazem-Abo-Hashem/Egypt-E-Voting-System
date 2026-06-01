@@ -8,13 +8,17 @@ export default function Sidebar() {
 
       <h3>
         <NavLink
-          to="/home"
-          className={({ isActive }) =>
-            isActive ? "sidebar-link active-link" : "sidebar-link"
-          }
-        >
-          Management
-        </NavLink>
+  to="/home"
+  className={() =>
+    window.location.pathname === "/home" ||
+    window.location.pathname === "/people-assembly" ||
+    window.location.pathname === "/edit"
+      ? "sidebar-link active-link"
+      : "sidebar-link"
+  }
+>
+  Management
+</NavLink>
       </h3>
 
       <ul>
