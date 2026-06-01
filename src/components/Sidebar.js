@@ -44,7 +44,7 @@ export default function Sidebar() {
     window.location.pathname.startsWith("/candidate")
       ? "sidebar-link active-link"
       : "sidebar-link"
-  }
+  }//moaz
 >
   Email
 </NavLink>
