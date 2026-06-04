@@ -4,6 +4,7 @@ import "./edit.css";
 function PeopleAssembly() {
   const location = useLocation();
   const navigate = useNavigate();
+
   const data = location.state;
 
   return (
@@ -12,29 +13,32 @@ function PeopleAssembly() {
 
       <div className="form">
         <label>Election Name</label>
-        <input value={data?.electionNumber || ""} readOnly />
-
+        <input value={data?.election_name || ""} readOnly />
+       
         <div className="row">
           <div>
             <label>Governorate</label>
             <input value={data?.governorate || ""} readOnly />
           </div>
 
-          <div>
-            <label>Elogo</label>
-            <input value={data?.elogo || ""} readOnly />
-          </div>
+          
         </div>
 
         <div className="row">
           <div>
             <label>From Day</label>
-            <input value={data?.fromDay || ""} readOnly />
+            <input
+  value={data?.start_date ? data.start_date.split("T")[0] : ""}
+  readOnly
+/>
           </div>
 
           <div>
             <label>To Day</label>
-            <input value={data?.toDay || ""} readOnly />
+          <input
+  value={data?.end_date ? data.end_date.split("T")[0] : ""}
+  readOnly
+/>
           </div>
         </div>
 

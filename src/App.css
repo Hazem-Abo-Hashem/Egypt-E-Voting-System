@@ -21,8 +21,9 @@
 }
 .logo{
   font-weight:700;
-  font-size:18px;
-  margin-bottom:35px;
+  font-size:18.5px;
+  margin-bottom:40px;
+  
 }
 .sidebar-link {
   text-decoration: none;
@@ -175,9 +176,9 @@ body {
   text-decoration: underline;
   font-weight: 600;
 }
-.sidebar{
+ .sidebar{
   position: fixed;
   top: 0;
   left: o;
   width: 240px;
-}
+} 

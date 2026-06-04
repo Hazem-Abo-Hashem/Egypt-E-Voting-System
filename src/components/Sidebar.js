@@ -5,22 +5,28 @@ export default function Sidebar() {
   return (
     <div className="sidebar bn">
       <div className="logo">
-        Egypt E_voting <br />
-        system{" "}
+        Egypt E_Voting System{" "}
       </div>
 
       <h3>
         <NavLink
-          to="/home"
-          className={({ isActive }) =>
-            isActive ? "sidebar-link active-link" : "sidebar-link"
-          }
-        >
-          Management
-        </NavLink>
+  to="/home"
+  className={() =>
+    window.location.pathname === "/home" ||
+    window.location.pathname === "/people-assembly" ||
+    window.location.pathname === "/edit"
+      ? "sidebar-link active-link"
+      : "sidebar-link"
+  }
+>
+  Management
+</NavLink>
       </h3>
-
       <ul>
+
+
+
+
         <li>
           <NavLink
             to="/add-admin"
@@ -34,6 +40,9 @@ export default function Sidebar() {
           </NavLink>
         </li>
 
+
+
+
         <li>
           <NavLink
             to="/email"
@@ -45,9 +54,14 @@ export default function Sidebar() {
                 : "sidebar-link"
             }
           >
-            Email
+            Approval 
           </NavLink>
         </li>
+
+
+
+
+
         <li>
           <NavLink
             to="/problem"
@@ -60,6 +74,11 @@ export default function Sidebar() {
             Problem
           </NavLink>
         </li>
+
+
+
+
+
         <li>
           <NavLink
             to="/accepted"
@@ -70,6 +89,11 @@ export default function Sidebar() {
             Accepted
           </NavLink>
         </li>
+
+
+
+
+
         <li>
           <NavLink
             to="/ElectoralDistrictPage"
@@ -80,7 +104,24 @@ export default function Sidebar() {
             Electoral District
           </NavLink>
         </li>
-        <li>Political Party</li>
+  
+
+
+
+        <li>
+          <NavLink
+            to="/PoliticalPartyPage"
+            className={({ isActive }) =>
+              isActive ? "sidebar-link active-link" : "sidebar-link"
+            }
+          >
+           Political Party
+          </NavLink>
+          </li>
+
+
+
+
         <li>
           <NavLink
             to="/VotePage"
@@ -91,6 +132,9 @@ export default function Sidebar() {
            Vote
           </NavLink>
           </li>
+
+
+
         <li>
           <NavLink
             to="/VoterPage"
@@ -101,7 +145,21 @@ export default function Sidebar() {
            Voter
           </NavLink>
           </li>
-        <li>Result</li>
+
+
+
+        <li>
+           <NavLink
+            to="/ResultPage"
+            className={({ isActive }) =>
+              isActive ? "sidebar-link active-link" : "sidebar-link"
+            }
+          >
+          Result
+          </NavLink>
+          </li>
+
+
       </ul>
     </div>
   );

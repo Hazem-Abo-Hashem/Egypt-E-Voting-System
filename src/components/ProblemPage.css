@@ -6,6 +6,14 @@
 
 }
 
+.hh{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 25px;
+  
+}
+
 .top-bar {
   margin-left: -30px;
   background: linear-gradient(90deg,#1d4ed8,#2563eb);
@@ -13,7 +21,9 @@
   padding: 30px 70px;
   margin-left: -25px;
   margin-top: 0px;
-  width: 103%;
+  width: 104%;
+  border: 5px solid blue;
+  border-radius: 5px 5px 20px 20px;
 }
 
 

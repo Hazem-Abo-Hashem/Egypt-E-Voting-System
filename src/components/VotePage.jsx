@@ -1,78 +1,123 @@
+import { useEffect, useState } from "react";
 import "./VotePage.css";
 
-const votes = [
-  {
-    code: "A7m#kp2$",
-    time: "11:00",
-    date: "11/1/2025",
-    nationalId: "20001011111111",
-    election: "People Assembly",
-    candidateId: "2542897506748",
-  },
-  {
-    code: "ZQ4@lm9!",
-    time: "11:01",
-    date: "11/1/2025",
-    nationalId: "20002022222222",
-    election: "People Assembly",
-    candidateId: "2542897506748",
-  },
-  {
-    code: "ZQ4@lm9!",
-    time: "11:02",
-    date: "11/1/2025",
-    nationalId: "20002022222333",
-    election: "People Assembly",
-    candidateId: "2542897506748",
-  },
-  {
-    code: "ZQ4@lm9!",
-    time: "11:03",
-    date: "12/1/2025",
-    nationalId: "20002022222444",
-    election: "People Assembly",
-    candidateId: "2542897506748",
-  },
-  {
-    code: "ZQ4@lm9!",
-    time: "11:04",
-    date: "12/1/2025",
-    nationalId: "20002022222555",
-    election: "People Assembly",
-    candidateId: "2542897506748",
-  },
-];
-
 function VotePage() {
+  const [votes, setVotes] = useState([]);
+  const [filteredVotes, setFilteredVotes] = useState([]);
+  const [search, setSearch] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchVotes();
+  }, []);
+
+  useEffect(() => {
+    const filtered = votes.filter(
+      (vote) =>
+        vote.v_national_id
+          .toString()
+          .includes(search) ||
+        vote.c_national_id
+          .toString()
+          .includes(search) ||
+        vote.election_name
+          .toLowerCase()
+          .includes(search.toLowerCase()) ||
+        vote.v_code
+          .toString()
+          .includes(search)
+    );
+
+    setFilteredVotes(filtered);
+  }, [search, votes]);
+
+  const fetchVotes = async () => {
+    try {
+      const token = localStorage.getItem("token");
+
+      const response = await fetch(
+        "https://egypt-voting-system.onrender.com/api/admin/votes",
+        {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.success) {
+        setVotes(result.data);
+        setFilteredVotes(result.data);
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="vote-page">
-      <h2 className="vote-title">Vote</h2>
+      <h2 className="vote-title">
+        Vote
+      </h2>
 
-      <div className="search-box">
-        <input placeholder="Search for voter" />
+      <div className="search-container">
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search Text"
+          value={search}
+          onChange={(e) =>
+            setSearch(e.target.value)
+          }
+        />
       </div>
 
-      <div className="table-card">
-        <div className="table-header table-grid">
-          <span>V Code</span>
-          <span>Time</span>
-          <span>Date</span>
-          <span>V National Id</span>
-          <span>Election Name</span>
-          <span>C National Id</span>
+      {loading ? (
+        <h2 className="loading-text">
+          Loading...
+        </h2>
+      ) : (
+        <div className="table-container">
+          <table className="vote-table">
+            <thead>
+              <tr>
+                <th>V Code</th>
+                <th>Time</th>
+                <th>Date</th>
+                <th>V National ID</th>
+                <th>Election Name</th>
+                <th>C National ID</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {filteredVotes.map(
+                (vote, index) => (
+                  <tr key={index}>
+                    <td>{vote.v_code}</td>
+                    <td>{vote.time}</td>
+                    <td>{vote.data}</td>
+                    <td>
+                      {vote.v_national_id}
+                    </td>
+                    <td className="election-name">
+                      {vote.election_name}
+                    </td>
+                    <td>
+                      {vote.c_national_id}
+                    </td>
+                  </tr>
+                )
+              )}
+            </tbody>
+          </table>
         </div>
-
-        {votes.map((v, index) => (
-          <div className="table-row table-grid" key={index}>
-            <span>{v.code}</span>
-            <span>{v.time}</span>
-            <span>{v.date}</span>
-            <span>{v.nationalId}</span>
-            <span className="link">{v.election}</span>
-            <span>{v.candidateId}</span>
-          </div>
-        ))}
-      </div>
+      )}
     </div>
   );
 }

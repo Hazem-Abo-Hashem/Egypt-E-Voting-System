@@ -1,91 +1,130 @@
-.vote-page {
-  padding: 40px 60px;
-  width: 100%;
+.voter-page {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* title */
-
-.vote-title {
+.voter-title {
+  width: 300px;
+  margin: 20px auto 25px;
   text-align: center;
-  font-size: 28px;
+  padding: 12px;
+  border: 2px solid #4a63ff;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 600;
+  background: white;
+}
+
+/* Search */
+
+.search-container {
+  width: 100%;
   margin-bottom: 30px;
 }
 
-/* search */
-
-.search-box {
+.search-input {
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto 25px auto;
-}
-
-.search-box input {
-  width: 100%;
-  padding: 12px;
-  border-radius: 12px;
-  border: 2px solid #4a63ff;
-  outline: none;
-}
-
-/* table */
-
-.table-card {
-  max-width: 1000px;
-  margin: auto;
-  background: #f5f6f8;
-  border-radius: 16px;
   padding: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
-}
-
-/* grid واحد مشترك */
-
-.table-grid1 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-}
-
-/* header */
-
-.table-header {
-  background: black;
-  color: white;
-  padding: 12px;
-  border-radius: 12px;
-  font-size: 14px;
-}
-
-/* rows */
-
-.table-row {
-  background: #dfe4ea;
-  margin-top: 10px;
-  padding: 10px;
+  border: 1.5px solid #4a63ff;
   border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  background: white;
+}
+
+/* Table */
+
+.table-container {
+  width: 100%;
+  background: #f5f5f5;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.voter-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.voter-table thead tr {
+  background: #000;
+}
+
+.voter-table th {
+  color: white;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.voter-table th:first-child {
+  border-radius: 12px 0 0 12px;
+}
+
+.voter-table th:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+.voter-table td {
+  background: #dde3eb;
+  padding: 12px;
+  text-align: center;
   font-size: 14px;
 }
 
-/* مهم جداً */
-
-.table-grid span {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.voter-table td:first-child {
+  border-radius: 10px 0 0 10px;
 }
 
-.table-header span {
+.voter-table td:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.candidate-name {
+  color: #3b44e0;
   font-weight: 500;
 }
 
-.table-row span {
-  display: flex;
-  align-items: center;
+.status-voted {
+  color: #1f9d55;
+  font-weight: 600;
 }
 
-/* link style */
+.status-not-voted {
+  color: #e53935;
+  font-weight: 600;
+}
 
-.link {
-  color: #3b44e0;
-  cursor: pointer;
+.loading-text {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .voter-page {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .voter-title {
+    width: 220px;
+    font-size: 18px;
+  }
+
+  .voter-table th,
+  .voter-table td {
+    font-size: 12px;
+    padding: 10px;
+  }
 }

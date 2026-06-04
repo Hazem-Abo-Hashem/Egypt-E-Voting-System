@@ -9,6 +9,8 @@
   background: linear-gradient(90deg,#1d4ed8,#2563eb);
   color:white;
   padding:30px 70px;
+  border: 5px solid blue;
+  border-radius: 5px 5px 20px 20px;
 }
 
 .candidate-wrapper{
@@ -32,12 +34,23 @@
   border-radius:30px;
 }
 
-.image-box{
-  height:220px;
-  background:#9e9494;
-  border-radius:30px;
-  margin-bottom:20px;
+.image-box {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  background: transparent; /* 👈 الحل */
 }
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+ object-fit: contain;
+background-color: #f3f3f3; /* أو نفس لون الخلفية */
+}
+
 
 .name{
   text-align:center;

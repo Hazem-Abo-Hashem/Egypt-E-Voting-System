@@ -3,14 +3,22 @@
   
   
 }
+.hh{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 25px;
+  
+}
 .email-body h3{
   margin-left: -90px;
 }
 .mm{
   margin-top: -40px;
-  width: 106.5%;
+  width: 107%;
   margin-left: -45px;
-  
+  border: 5px solid blue;
+  border-radius: 5px 5px 20px 20px;
 }
 .aa{
   width: 117.5%;

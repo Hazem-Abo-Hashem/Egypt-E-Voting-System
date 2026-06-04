@@ -13,11 +13,14 @@ import FilePage from "./components/FilePage";
 import ProblemPage from "./components/ProblemPage";
 import ContactPage from "./components/ContactPage";
 import ReplyPage from "./components/ReplyPage";
-import AcceptedPage from "./components/AcceptedPage"
+import AcceptedPage from "./components/AcceptedPage";
+import ElectionsPage from "./components/ElectionsPage";
 import ElectoralDistrictPage from "./components/ElectoralDistrictPage";
-import DistrictForm from "./components/DistrictForm";
 import VotePage from "./components/VotePage";
 import VoterPage from "./components/VoterPage";
+import PoliticalPartyPage from "./components/PoliticalPartyPage";
+import ResultPage from "./components/ResultPage";
+
 import "./App.css";
 
 function MainLayout({ children }) {
@@ -198,6 +201,15 @@ const deleteAccepted = (id) => {
       <AcceptedPage accepted={accepted}   deleteAccepted={deleteAccepted}/>
     </MainLayout>
   }
+  
+/>
+<Route
+  path="/elections"
+  element={
+    <MainLayout>
+      <ElectionsPage />
+    </MainLayout>
+  }
 />
 
 <Route
@@ -205,15 +217,6 @@ const deleteAccepted = (id) => {
           element={
             <MainLayout>
               <ElectoralDistrictPage/>
-            </MainLayout>
-          }
-        />
-
-        <Route
-          path="/DistrictForm"
-          element={
-            <MainLayout>
-              <DistrictForm/>
             </MainLayout>
           }
         />
@@ -232,6 +235,24 @@ const deleteAccepted = (id) => {
           element={
             <MainLayout>
               <VoterPage/>
+            </MainLayout>
+          }
+        />
+         
+         <Route
+          path="/ResultPage"
+          element={
+            <MainLayout>
+              <ResultPage/>
+            </MainLayout>
+          }
+        />
+         
+          <Route
+          path="/PoliticalPartyPage"
+          element={
+            <MainLayout>
+              <PoliticalPartyPage/>
             </MainLayout>
           }
         />

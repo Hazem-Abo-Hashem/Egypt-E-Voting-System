@@ -9,7 +9,6 @@ function ContactPage() {
 
       <div className="top-bara xx">
         <h2>Welcome , Admin !</h2>
-        <p>Here's what's happening with your projects today</p>
       </div>
 
       <div className="contact-container">
