@@ -1,70 +1,506 @@
-# Getting Started with Create React App
+<h1 align="center">
+🇪🇬 Egypt Electronic Voting System
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+AI-Based Secure Electronic Voting Platform for Egyptian Elections
+</p>
 
-## Available Scripts
+<p align="center">
 
-In the project directory, you can run:
+React • FastAPI • SQLite • Supabase • Face Recognition • OCR
 
-### `npm start`
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
 
-### `npm test`
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Python](https://img.shields.io/badge/Python-3.12-yellow?logo=python)
 
-### `npm run build`
+![License](https://img.shields.io/badge/License-Educational-red)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 📌 Project Overview
 
-### `npm run eject`
+The Egypt Electronic Voting System consists of two main parts:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Mobile Application for Egyptian Citizens
+- React Admin Dashboard for Election Management
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The mobile application allows citizens to authenticate using facial recognition and vote securely.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The Admin Dashboard allows election authorities to manage every stage of the election process from one place.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+# ✨ Main Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authentication
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Secure Login
+- Admin Authentication
+- Protected Routes
 
-### Code Splitting
+## Election Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Create Elections
+- Edit Elections
+- View Elections
+- Delete Elections
 
-### Analyzing the Bundle Size
+## Electoral District Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Add Electoral District
+- Edit Electoral District
+- View Electoral Districts
 
-### Making a Progressive Web App
+## Political Party Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Add Political Parties
+- Edit Political Parties
+- View Political Parties
 
-### Advanced Configuration
+## Candidate Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Candidate Registration Review
+- Candidate Details
+- Candidate Image Viewer
+- Candidate Approval
+- Candidate Acceptance
+- Candidate Rejection
 
-### Deployment
+## Voting Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- View Votes
+- Track Election Activity
+- View Registered Voters
+- Monitor Voting Process
 
-### `npm run build` fails to minify
+## Results
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Real-Time Election Results
+- Candidate Vote Count
+- Election Statistics
+
+## Communication
+
+- Contact Messages
+- Reply to Users
+- Problem Reports
+
+---
+
+# 🛠 Built With
+
+### Frontend
+
+- React.js
+- JavaScript (ES6)
+- HTML5
+- CSS3
+- React Router DOM
+- Axios
+
+### Backend
+
+- FastAPI
+- Python
+
+### Database
+
+- SQLite
+- Supabase
+
+### AI Technologies
+
+- Face Recognition
+- OCR
+- National ID Verification
+
+---
+
+# 📂 Project Structure
+
+```
+my-app/
+│
+├── public/
+├── src/
+│
+├── assets/
+│   └── screenshots/
+│
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+---
+
+# 📸 Admin Dashboard Screenshots
+
+The following screenshots demonstrate the main interfaces of the Admin Dashboard.
+## 🔐 Login
+
+User authentication page for administrators before accessing the dashboard.
+
+![Login](assets/screenshots/login.png)
+
+---
+
+## 👨‍💼 Add Admin
+
+Create new administrator accounts with secure credentials.
+
+![Add Admin](assets/screenshots/add-admin.png)
+
+---
+
+## 📋 Admin List
+
+Display all administrators with search and delete functionality.
+
+![Admin List](assets/screenshots/admin-list.png)
+
+---
+
+## 🗳 Create Election
+
+Create and schedule new elections.
+
+![Create Election](assets/screenshots/create-election.png)
+
+---
+
+## 📝 Election Details
+
+View all created elections.
+
+![Election Details](assets/screenshots/election-details.png)
+
+---
+
+## ✏️ Edit Election
+
+Modify election information.
+
+![Edit Election](assets/screenshots/edit-election.png)
+
+---
+
+## 🏛 Electoral Districts
+
+Display all electoral districts and their information.
+
+![District](assets/screenshots/district.png)
+
+---
+
+## ➕ Add Electoral District
+
+Create a new electoral district.
+
+![Add District](assets/screenshots/add-district.png)
+
+---
+
+## ✏️ Edit Electoral District
+
+Update district information.
+
+![Edit District](assets/screenshots/edit-district.png)
+
+---
+
+## 🏢 Political Parties
+
+Manage registered political parties.
+
+![Political Party](assets/screenshots/political-party.png)
+
+---
+
+## ✅ Candidate Approval
+
+Review candidate applications before approval.
+
+![Approval](assets/screenshots/approval.png)
+
+---
+
+## 👤 Candidate Details
+
+Display complete candidate information including uploaded documents.
+
+![Candidate Details](assets/screenshots/candidate-details.png)
+
+---
+
+## 🖼 Candidate Image
+
+Preview uploaded candidate images.
+
+![Candidate Image](assets/screenshots/candidate-image.png)
+
+---
+
+## ✔ Accepted Candidates
+
+Display approved candidates.
+
+![Accepted](assets/screenshots/accepted.png)
+
+---
+
+## 🗳 Votes
+
+View every recorded vote with election information.
+
+![Votes](assets/screenshots/votes.png)
+
+---
+
+## 👥 Voters
+
+Display registered voters participating in elections.
+
+![Voters](assets/screenshots/voters.png)
+
+---
+
+## 📊 Election Results
+
+Real-time election result monitoring.
+
+![Result](assets/screenshots/result.png)
+
+---
+
+## 📨 Contact Messages
+
+Users can send inquiries to the administration.
+
+![Contact](assets/screenshots/contact.png)
+
+---
+
+## ⚠ Problem Reports
+
+Display reported issues from users.
+
+![Problem](assets/screenshots/problem.png)
+
+---
+
+## ✉ Reply Messages
+
+Reply to users directly from the dashboard.
+
+![Reply](assets/screenshots/reply.png)
+
+---
+# 🚀 Getting Started
+
+## Prerequisites
+
+Before running the project, make sure you have installed:
+
+- Node.js
+- npm
+- Git
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Hazem-Abo-Hashem/Egypt-E-Voting-System.git
+```
+
+Go to the project directory
+
+```bash
+cd Egypt-E-Voting-System
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm start
+```
+
+The application will run on
+
+```
+http://localhost:3000
+```
+
+---
+
+# 📦 Main Dependencies
+
+- React
+- React Router DOM
+- Axios
+- CSS3
+- HTML5
+- JavaScript ES6
+
+---
+
+# 🔒 Admin Dashboard Modules
+
+✔ Login Authentication
+
+✔ Admin Management
+
+✔ Election Management
+
+✔ Electoral District Management
+
+✔ Political Party Management
+
+✔ Candidate Approval
+
+✔ Candidate Details
+
+✔ Candidate Image Viewer
+
+✔ Accepted Candidates
+
+✔ Vote Monitoring
+
+✔ Voter Management
+
+✔ Election Results
+
+✔ Contact Messages
+
+✔ Problem Reports
+
+✔ Email Reply System
+
+---
+
+# 📱 Mobile Application Features
+
+- Citizen Login
+- Face Recognition Authentication
+- National ID Verification
+- Electronic Voting
+- One Vote Per Citizen
+- Secure Voting Process
+- Election Participation
+- Real-Time Result Access
+
+---
+
+# 🔐 Security Features
+
+- Authentication & Authorization
+- Protected Admin Routes
+- National ID Verification
+- AI Face Recognition
+- Secure API Communication
+- One Person One Vote
+- Real-Time Election Monitoring
+
+---
+
+# 💻 Technologies Used
+
+## Frontend
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- React Router DOM
+- Axios
+
+## Backend
+
+- FastAPI
+- Python
+
+## Database
+
+- SQLite
+- Supabase
+
+## AI
+
+- Face Recognition
+- OCR
+- AI Verification
+
+---
+
+# 📈 Future Improvements
+
+- Two-Factor Authentication (2FA)
+- Fingerprint Verification
+- Blockchain Vote Storage
+- Live Election Analytics
+- Dark Mode
+- Responsive Mobile Dashboard
+- Multi-language Support
+- Cloud Deployment
+- Audit Logs
+- Email Notifications
+
+---
+
+# 🤝 Contribution
+
+Contributions are welcome.
+
+If you have suggestions or improvements:
+
+1. Fork the repository.
+2. Create a new branch.
+3. Commit your changes.
+4. Push your branch.
+5. Open a Pull Request.
+
+---
+
+# 📄 License
+
+This project was developed for educational and graduation purposes.
+
+---
+
+# 👨‍💻 Authors
+
+**Hazem Abo Hashem**
+
+Faculty of Computers and Information
+
+Graduation Project
+
+---
+
+# ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and supports future development.
+
+---
+
+## Thank You ❤️
