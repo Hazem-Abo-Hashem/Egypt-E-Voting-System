@@ -1,104 +1,161 @@
-<h1 align="center">
-🇪🇬 Egypt Electronic Voting System
-</h1>
+<h1 align="center">🇪🇬 Egypt Electronic Voting System</h1>
 
 <p align="center">
-AI-Based Secure Electronic Voting Platform for Egyptian Elections
+React Admin Dashboard
 </p>
 
 <p align="center">
-
-React • FastAPI • SQLite • Supabase • Face Recognition • OCR
-
+Frontend Web Application developed as part of the Egypt Electronic Voting System Graduation Project.
 </p>
 
 ---
 
-![React](https://img.shields.io/badge/React-18-blue?logo=react)
-
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi)
-
-![Python](https://img.shields.io/badge/Python-3.12-yellow?logo=python)
-
-![License](https://img.shields.io/badge/License-Educational-red)
-
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![FastAPI](https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
+
+---
+
+> [!IMPORTANT]
+>
+> ## Repository Scope
+>
+> **This repository contains ONLY the React Admin Dashboard frontend source code.**
+>
+> The complete graduation project consists of multiple independent components.
+>
+> **The following components are NOT included in this repository:**
+>
+> - Flutter Mobile Application
+> - FastAPI Backend
+> - SQLite Database
+> - Supabase
+> - AI Face Recognition Module
+> - OCR National ID Verification
+> - Any backend source code
+>
+> This repository is intended to demonstrate the **React frontend implementation** developed for the administrative dashboard.
 
 ---
 
 # 📌 Project Overview
 
-The Egypt Electronic Voting System consists of two main parts:
+The Egypt Electronic Voting System is a graduation project developed to provide a secure electronic voting platform for Egyptian elections.
 
-- Mobile Application for Egyptian Citizens
-- React Admin Dashboard for Election Management
+The complete system consists of several integrated components working together to deliver a secure and transparent voting experience.
 
-The mobile application allows citizens to authenticate using facial recognition and vote securely.
+## Complete Graduation Project
 
-The Admin Dashboard allows election authorities to manage every stage of the election process from one place.
+| Component | Technology | Included |
+|-----------|------------|----------|
+| Mobile Application | Flutter | ❌ |
+| Backend API | FastAPI | ❌ |
+| Database | SQLite + Supabase | ❌ |
+| AI Face Recognition | Python | ❌ |
+| OCR Verification | Python | ❌ |
+| React Admin Dashboard | React.js | ✅ This Repository |
 
 ---
 
-# ✨ Main Features
+# 🏗 React Admin Dashboard
 
-## Authentication
+The Admin Dashboard is responsible for managing every administrative operation inside the voting system.
+
+It allows election administrators to:
+
+- Manage Elections
+- Approve Candidates
+- Manage Electoral Districts
+- Manage Political Parties
+- Monitor Votes
+- Monitor Voters
+- Display Election Results
+- Review Candidate Documents
+- Manage Contact Messages
+- Respond to User Reports
+
+---
+
+# ✨ Features
+
+## 🔐 Authentication
 
 - Secure Login
-- Admin Authentication
 - Protected Routes
+- Administrator Authentication
 
-## Election Management
+---
+
+## 🗳 Election Management
 
 - Create Elections
 - Edit Elections
-- View Elections
 - Delete Elections
+- View Election Details
 
-## Electoral District Management
+---
 
-- Add Electoral District
-- Edit Electoral District
-- View Electoral Districts
+## 👨‍💼 Admin Management
 
-## Political Party Management
+- Add Admin
+- View Admins
+- Delete Admin
 
-- Add Political Parties
-- Edit Political Parties
-- View Political Parties
+---
 
-## Candidate Management
+## 👤 Candidate Management
 
-- Candidate Registration Review
+- Candidate Approval
 - Candidate Details
 - Candidate Image Viewer
-- Candidate Approval
-- Candidate Acceptance
-- Candidate Rejection
+- Accepted Candidates
 
-## Voting Management
+---
+
+## 🏛 Electoral District Management
+
+- View Districts
+- Add District
+- Edit District
+
+---
+
+## 🏢 Political Party Management
+
+- View Political Parties
+- Search Political Parties
+
+---
+
+## 🗳 Voting Management
 
 - View Votes
-- Track Election Activity
-- View Registered Voters
-- Monitor Voting Process
+- View Voters
+- Monitor Election Activity
 
-## Results
+---
 
-- Real-Time Election Results
-- Candidate Vote Count
-- Election Statistics
+## 📊 Election Results
 
-## Communication
+- Display Results
+- Candidate Statistics
+
+---
+
+## 📩 Communication
 
 - Contact Messages
-- Reply to Users
+- Reply System
 - Problem Reports
 
 ---
 
-# 🛠 Built With
+# 🛠 Tech Stack
 
-### Frontend
+## Frontend
 
 - React.js
 - JavaScript (ES6)
@@ -107,17 +164,23 @@ The Admin Dashboard allows election authorities to manage every stage of the ele
 - React Router DOM
 - Axios
 
-### Backend
+---
+
+## Backend (Not Included)
 
 - FastAPI
 - Python
 
-### Database
+---
+
+## Database (Not Included)
 
 - SQLite
 - Supabase
 
-### AI Technologies
+---
+
+## AI Technologies (Not Included)
 
 - Face Recognition
 - OCR
@@ -127,17 +190,20 @@ The Admin Dashboard allows election authorities to manage every stage of the ele
 
 # 📂 Project Structure
 
-```
+```text
 my-app/
-│
+
 ├── public/
+
 ├── src/
-│
+
 ├── assets/
-│   └── screenshots/
-│
+│ └── screenshots/
+
 ├── package.json
+
 ├── package-lock.json
+
 └── README.md
 ```
 
@@ -145,207 +211,143 @@ my-app/
 
 # 📸 Admin Dashboard Screenshots
 
-The following screenshots demonstrate the main interfaces of the Admin Dashboard.
+The following screenshots demonstrate the React Admin Dashboard included in this repository.
 ## 🔐 Login
 
-User authentication page for administrators before accessing the dashboard.
+Administrator authentication page.
 
-![Login](assets/screenshots/login.png)
-
----
-
-## 👨‍💼 Add Admin
-
-Create new administrator accounts with secure credentials.
-
-![Add Admin](assets/screenshots/add-admin.png)
+<p align="center">
+<img src="assets/screenshots/login.png" width="90%">
+</p>
 
 ---
 
-## 📋 Admin List
+# 👨‍💼 Admin Management
 
-Display all administrators with search and delete functionality.
+<p align="center">
+<img src="assets/screenshots/add-admin.png" width="48%">
+<img src="assets/screenshots/admin-list.png" width="48%">
+</p>
 
-![Admin List](assets/screenshots/admin-list.png)
-
----
-
-## 🗳 Create Election
-
-Create and schedule new elections.
-
-![Create Election](assets/screenshots/create-election.png)
+Administrators can create new administrator accounts and manage existing ones through a simple interface.
 
 ---
 
-## 📝 Election Details
+# 🗳 Election Management
 
-View all created elections.
+<p align="center">
+<img src="assets/screenshots/create-election.png" width="48%">
+<img src="assets/screenshots/election-details.png" width="48%">
+</p>
 
-![Election Details](assets/screenshots/election-details.png)
+<p align="center">
+<img src="assets/screenshots/edit-election.png" width="48%">
+</p>
 
----
-
-## ✏️ Edit Election
-
-Modify election information.
-
-![Edit Election](assets/screenshots/edit-election.png)
-
----
-
-## 🏛 Electoral Districts
-
-Display all electoral districts and their information.
-
-![District](assets/screenshots/district.png)
+The dashboard allows administrators to create, edit and monitor elections from a centralized interface.
 
 ---
 
-## ➕ Add Electoral District
+# 🏛 Electoral District Management
 
-Create a new electoral district.
+<p align="center">
+<img src="assets/screenshots/district.png" width="48%">
+<img src="assets/screenshots/add-district.png" width="48%">
+</p>
 
-![Add District](assets/screenshots/add-district.png)
+<p align="center">
+<img src="assets/screenshots/edit-district.png" width="48%">
+</p>
 
----
-
-## ✏️ Edit Electoral District
-
-Update district information.
-
-![Edit District](assets/screenshots/edit-district.png)
-
----
-
-## 🏢 Political Parties
-
-Manage registered political parties.
-
-![Political Party](assets/screenshots/political-party.png)
+Election districts can be viewed, added and updated easily.
 
 ---
 
-## ✅ Candidate Approval
+# 🏢 Political Party Management
 
-Review candidate applications before approval.
+<p align="center">
+<img src="assets/screenshots/political-party.png" width="75%">
+</p>
 
-![Approval](assets/screenshots/approval.png)
-
----
-
-## 👤 Candidate Details
-
-Display complete candidate information including uploaded documents.
-
-![Candidate Details](assets/screenshots/candidate-details.png)
+Manage all registered political parties participating in elections.
 
 ---
 
-## 🖼 Candidate Image
+# 👤 Candidate Management
 
-Preview uploaded candidate images.
+<p align="center">
+<img src="assets/screenshots/approval.png" width="48%">
+<img src="assets/screenshots/candidate-details.png" width="48%">
+</p>
 
-![Candidate Image](assets/screenshots/candidate-image.png)
+<p align="center">
+<img src="assets/screenshots/candidate-image.png" width="48%">
+<img src="assets/screenshots/accepted.png" width="48%">
+</p>
 
----
-
-## ✔ Accepted Candidates
-
-Display approved candidates.
-
-![Accepted](assets/screenshots/accepted.png)
-
----
-
-## 🗳 Votes
-
-View every recorded vote with election information.
-
-![Votes](assets/screenshots/votes.png)
+Review candidate applications, verify submitted documents and approve accepted candidates.
 
 ---
 
-## 👥 Voters
+# 🗳 Vote Management
 
-Display registered voters participating in elections.
+<p align="center">
+<img src="assets/screenshots/votes.png" width="48%">
+<img src="assets/screenshots/voters.png" width="48%">
+</p>
 
-![Voters](assets/screenshots/voters.png)
-
----
-
-## 📊 Election Results
-
-Real-time election result monitoring.
-
-![Result](assets/screenshots/result.png)
+Monitor voting activity and review registered voters.
 
 ---
 
-## 📨 Contact Messages
+# 📊 Election Results
 
-Users can send inquiries to the administration.
+<p align="center">
+<img src="assets/screenshots/result.png" width="75%">
+</p>
 
-![Contact](assets/screenshots/contact.png)
-
----
-
-## ⚠ Problem Reports
-
-Display reported issues from users.
-
-![Problem](assets/screenshots/problem.png)
+Display election statistics and final results.
 
 ---
 
-## ✉ Reply Messages
+# 📩 Contact & Support
 
-Reply to users directly from the dashboard.
+<p align="center">
+<img src="assets/screenshots/contact.png" width="48%">
+<img src="assets/screenshots/problem.png" width="48%">
+</p>
 
-![Reply](assets/screenshots/reply.png)
+<p align="center">
+<img src="assets/screenshots/reply.png" width="48%">
+</p>
+
+Receive user messages, review reported problems and send replies directly from the dashboard.
 
 ---
+
 # 🚀 Getting Started
 
-## Prerequisites
-
-Before running the project, make sure you have installed:
-
-- Node.js
-- npm
-- Git
-
----
-
-## Installation
-
-Clone the repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/Hazem-Abo-Hashem/Egypt-E-Voting-System.git
 ```
 
-Go to the project directory
-
-```bash
-cd Egypt-E-Voting-System
-```
-
-Install dependencies
+## Install Dependencies
 
 ```bash
 npm install
 ```
 
-Start the development server
+## Start the Project
 
 ```bash
 npm start
 ```
 
-The application will run on
+The application will run on:
 
-```
+```text
 http://localhost:3000
 ```
 
@@ -353,154 +355,127 @@ http://localhost:3000
 
 # 📦 Main Dependencies
 
-- React
+- React.js
 - React Router DOM
 - Axios
-- CSS3
 - HTML5
+- CSS3
 - JavaScript ES6
 
 ---
 
-# 🔒 Admin Dashboard Modules
+# 🔗 REST API Integration
 
-✔ Login Authentication
+The Admin Dashboard communicates with backend REST APIs for:
 
-✔ Admin Management
-
-✔ Election Management
-
-✔ Electoral District Management
-
-✔ Political Party Management
-
-✔ Candidate Approval
-
-✔ Candidate Details
-
-✔ Candidate Image Viewer
-
-✔ Accepted Candidates
-
-✔ Vote Monitoring
-
-✔ Voter Management
-
-✔ Election Results
-
-✔ Contact Messages
-
-✔ Problem Reports
-
-✔ Email Reply System
+- Authentication
+- Election Management
+- Candidate Approval
+- Electoral District Management
+- Political Party Management
+- Vote Monitoring
+- Voter Management
+- Election Results
+- Contact Messages
 
 ---
 
-# 📱 Mobile Application Features
+# 👨‍💻 My Contribution
 
-- Citizen Login
-- Face Recognition Authentication
-- National ID Verification
-- Electronic Voting
-- One Vote Per Citizen
-- Secure Voting Process
-- Election Participation
-- Real-Time Result Access
+As the **Frontend Developer** of the graduation project, I was responsible for designing and implementing the complete **React-based Admin Dashboard**.
 
----
+My responsibilities included:
 
-# 🔐 Security Features
-
-- Authentication & Authorization
-- Protected Admin Routes
-- National ID Verification
-- AI Face Recognition
-- Secure API Communication
-- One Person One Vote
-- Real-Time Election Monitoring
+- Designing responsive user interfaces.
+- Building reusable React components.
+- Integrating frontend pages with REST APIs.
+- Implementing CRUD operations.
+- Managing application routing using React Router.
+- Displaying dynamic data retrieved from backend APIs.
+- Organizing the frontend project structure.
+- Improving usability and user experience.
 
 ---
 
-# 💻 Technologies Used
+# 📌 Repository Scope
 
-## Frontend
+This repository is intended to showcase **only the React Admin Dashboard** that I developed as part of the Egypt Electronic Voting System graduation project.
 
-- React.js
-- JavaScript
-- HTML5
-- CSS3
-- React Router DOM
-- Axios
+### Included in this repository
 
-## Backend
+- React frontend source code
+- UI components
+- Routing
+- API integration
+- Styling
+- Screenshots
+- Project documentation
 
-- FastAPI
-- Python
+### Not included in this repository
 
-## Database
+- Flutter Mobile Application
+- FastAPI Backend
+- Database Schema
+- SQLite Database
+- Supabase Configuration
+- AI Face Recognition Module
+- OCR National ID Verification
+- Authentication Server
+- Deployment Configuration
 
-- SQLite
-- Supabase
+These components belong to the complete graduation project and are maintained separately.
 
-## AI
+---
 
-- Face Recognition
-- OCR
-- AI Verification
+# 🎯 Purpose
+
+The purpose of this repository is to demonstrate the implementation of the **React Admin Dashboard** and my contribution as the **Frontend Developer** within the graduation project.
 
 ---
 
 # 📈 Future Improvements
 
-- Two-Factor Authentication (2FA)
-- Fingerprint Verification
-- Blockchain Vote Storage
-- Live Election Analytics
+Possible future enhancements include:
+
+- Dashboard Analytics
 - Dark Mode
-- Responsive Mobile Dashboard
-- Multi-language Support
-- Cloud Deployment
-- Audit Logs
+- Two-Factor Authentication (2FA)
 - Email Notifications
-
----
-
-# 🤝 Contribution
-
-Contributions are welcome.
-
-If you have suggestions or improvements:
-
-1. Fork the repository.
-2. Create a new branch.
-3. Commit your changes.
-4. Push your branch.
-5. Open a Pull Request.
+- Multi-language Support
+- Better Accessibility
+- Performance Optimization
+- Responsive Improvements
+- Role-based Permissions
+- Audit Logs
 
 ---
 
 # 📄 License
 
-This project was developed for educational and graduation purposes.
+This repository is published for **educational** and **portfolio** purposes only.
 
 ---
 
-# 👨‍💻 Authors
+# 👨‍🎓 Graduation Project
+
+Faculty of Computers and Information  
+El Shorouk Academy
+
+---
+
+# 👨‍💻 Author
 
 **Hazem Abo Hashem**
 
-Faculty of Computers and Information
+Frontend Developer
 
-Graduation Project
+GitHub:
+https://github.com/Hazem-Abo-Hashem
 
 ---
 
 # ⭐ Support
 
-If you like this project, consider giving it a ⭐ on GitHub.
+If you found this project useful, consider giving it a ⭐ on GitHub.
 
-It helps others discover the project and supports future development.
-
----
-
-## Thank You ❤️
+Thank you for visiting this repository.
